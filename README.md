@@ -1,6 +1,6 @@
 # Interview Asprak
 
-Kumpulan soal latihan interview asisten praktikum (asprak) berbasis Java. Setiap soal punya folder sendiri berisi deskripsi soal (`.md`) dan solusinya (`.java`).
+Kumpulan soal interview asisten praktikum (asprak) berbasis Java. Setiap soal punya folder sendiri berisi deskripsi soal (`.md`) dan solusinya (`.java`).
 
 ## Struktur Folder
 
