@@ -1,0 +1,15 @@
+# Compiled Java bytecode
+*.class
+bin/
+target/
+out/
+
+# VS Code Java extension
+.classpath
+.project
+.settings/
+.factorypath
+
+# OS files
+.DS_Store
+Thumbs.db
