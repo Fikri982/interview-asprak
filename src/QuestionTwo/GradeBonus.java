@@ -1,6 +1,6 @@
 package QuestionTwo;
 
-public class Grade {
+public class GradeBonus {
 
     static String tentukanGrade(int nilai) {
         if (nilai >= 86 && nilai <= 100) {
@@ -20,12 +20,22 @@ public class Grade {
         }
     }
 
+    static boolean isLulus(String grade) {
+        return !grade.equals("D") && !grade.equals("E");
+    }
+
     public static void main(String[] args) {
         int[] nilai = {90, 60, 40, 75, 88};
 
+        int totalLulus = 0;
         for (int i = 0; i < nilai.length; i++) {
             String grade = tentukanGrade(nilai[i]);
             System.out.println("Nilai " + nilai[i] + " -> Grade " + grade);
+            if (isLulus(grade)) {
+                totalLulus++;
+            }
         }
+
+        System.out.println("Total lulus: " + totalLulus);
     }
 }
