@@ -27,6 +27,10 @@ src/
 │   ├── Aritmatika.md
 │   ├── Aritmatika.java
 │   └── AritmatikaBonus.java
+├── QuestionFreestyle/
+│   ├── Submatriks.md
+│   ├── Submatriks.java
+│   └── SubmatriksBonus.java
 └── ...                          # QuestionSix, dst. mengikuti pola yang sama
 ```
 
@@ -41,6 +45,7 @@ Setiap folder `Question<N>` mengikuti pola: nama package `Question<N>` (huruf pe
 | 3 | [Presensi.md](src/QuestionThree/Presensi.md) | Rekap kehadiran mahasiswa Matematika ITS | [Presensi.java](src/QuestionThree/Presensi.java) | [PresensiBonus.java](src/QuestionThree/PresensiBonus.java) |
 | 4 | [Fruit.md](src/QuestionFour/Fruit.md) | Cek keanggotaan kata dalam himpunan buah-buahan | [Fruit.java](src/QuestionFour/Fruit.java) | [FruitBonus.java](src/QuestionFour/FruitBonus.java) |
 | 5 | [Aritmatika.md](src/QuestionFive/Aritmatika.md) | Cek apakah sebuah barisan bilangan merupakan barisan aritmatika | [Aritmatika.java](src/QuestionFive/Aritmatika.java) | [AritmatikaBonus.java](src/QuestionFive/AritmatikaBonus.java) |
+| Freestyle | [Submatriks.md](src/QuestionFreestyle/Submatriks.md) | Cari submatriks 2D dengan jumlah elemen terbesar (Kadane 2D) | [Submatriks.java](src/QuestionFreestyle/Submatriks.java) | [SubmatriksBonus.java](src/QuestionFreestyle/SubmatriksBonus.java) |
 
 > Tabel ini akan bertambah baris setiap kali ada soal baru ditambahkan (`QuestionSix`, dst).
 
