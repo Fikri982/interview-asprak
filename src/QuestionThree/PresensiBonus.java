@@ -15,22 +15,17 @@ public class PresensiBonus {
     }
 
     static double hitungPersentase(int totalHadir, int totalHari) {
-        return (double) totalHadir / totalHari * 100;
+        return (totalHadir / (double) totalHari) * 100;
     }
 
     public static void main(String[] args) {
         boolean[] presensi = {true, true, false, true, true};
 
         int totalHadir = hitungTotalHadir(presensi);
-        System.out.println("Total hari hadir: " + totalHadir);
-
         double persentase = hitungPersentase(totalHadir, presensi.length);
-        System.out.println("Persentase kehadiran: " + persentase + "%");
-        if (persentase >= 75.0) {
-            System.out.println("Memenuhi syarat kehadiran minimal 75%");
-        } else {
-            System.out.println("Tidak memenuhi syarat kehadiran minimal 75%");
-        }
+
+        System.out.println("Total hari hadir: " + totalHadir);
+        System.out.println("Memenuhi syarat 75%: " + (persentase >= 75.0));
 
         String hariAbsenPertama = "Selalu hadir";
         for (int i = 0; i < presensi.length; i++) {

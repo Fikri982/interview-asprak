@@ -15,6 +15,11 @@ public class Aritmatika {
     public static void main(String[] args) {
         int[] data = {2, 4, 6, 8, 10};
 
-        System.out.println("Merupakan barisan aritmatika: " + isBarisanAritmatika(data));
+        boolean hasil = isBarisanAritmatika(data);
+        System.out.println("Merupakan barisan aritmatika: " + hasil);
+        if (hasil) {
+            int beda = data[1] - data[0];
+            System.out.println("Beda: " + beda);
+        }
     }
 }

@@ -28,14 +28,19 @@ public class GradeBonus {
         int[] nilai = {90, 60, 40, 75, 88};
 
         int totalLulus = 0;
+        int totalNilaiLulus = 0;
         for (int i = 0; i < nilai.length; i++) {
             String grade = tentukanGrade(nilai[i]);
             System.out.println("Nilai " + nilai[i] + " -> Grade " + grade);
             if (isLulus(grade)) {
                 totalLulus++;
+                totalNilaiLulus += nilai[i];
             }
         }
 
         System.out.println("Total lulus: " + totalLulus);
+
+        double rataRataLulus = (double) totalNilaiLulus / totalLulus;
+        System.out.println("Rata-rata nilai yang lulus: " + rataRataLulus);
     }
 }

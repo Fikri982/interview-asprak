@@ -14,19 +14,22 @@ public class Prima {
         return true;
     }
 
+    static String tentukanGanjilGenap(int angka) {
+        if (angka % 2 == 0) {
+            return "Genap";
+        } else {
+            return "Ganjil";
+        }
+    }
+
     public static void main(String[] args) {
         int n = 20;
 
-        boolean pertama = true;
         for (int i = 2; i <= n; i++) {
             if (isPrima(i)) {
-                if (!pertama) {
-                    System.out.print(" ");
-                }
-                System.out.print(i);
-                pertama = false;
+                String ganjilGenap = tentukanGanjilGenap(i);
+                System.out.println(i + " (" + ganjilGenap + ")");
             }
         }
-        System.out.println();
     }
 }

@@ -2,9 +2,10 @@
 
 ## Deskripsi
 
-**Nilai mutlak (absolute value)** dari suatu bilangan menyatakan jaraknya dari nol, tanpa memandang arah positif atau negatif. Misalnya, nilai mutlak dari -5 dan 5 adalah sama-sama 5.
+Diberikan sekumpulan nilai ujian siswa dan sebuah nilai KKM (Kriteria Ketuntasan Minimal), tentukan:
 
-Diberikan sekumpulan nilai ujian siswa dan sebuah nilai KKM (Kriteria Ketuntasan Minimal), tentukan nilai siswa mana yang **paling dekat** dengan KKM tersebut (dihitung berdasarkan selisih mutlak terkecil).
+1. Nilai siswa mana yang **paling dekat** dengan KKM tersebut (dihitung berdasarkan selisih mutlak terkecil), beserta selisihnya.
+2. Berapa banyak siswa yang nilainya sudah mencapai atau melebihi KKM.
 
 ## Format Input
 
@@ -20,10 +21,12 @@ int kkm = 70;
 
 ## Format Output
 
-Program mencetak satu baris:
+Program mencetak tiga baris:
 
 ```
 Nilai paling dekat dengan KKM: <nilai>
+Selisih: <selisih>
+Jumlah siswa mencapai KKM: <jumlah>
 ```
 
 ## Contoh
@@ -39,16 +42,19 @@ int kkm = 70;
 
 ```
 Nilai paling dekat dengan KKM: 68
+Selisih: 2
+Jumlah siswa mencapai KKM: 2
 ```
 
-_(Karena selisih mutlak 68 dengan 70 adalah 2, yang paling kecil dibanding nilai lainnya: |60-70|=10, |75-70|=5, |90-70|=20)_
+_(Penjelasan: |60-70|=10, |75-70|=5, |68-70|=2, |90-70|=20, jadi 68 paling dekat dengan selisih 2. Yang mencapai/melebihi KKM: 75 dan 90, jadi 2 siswa.)_
 
 ## Petunjuk
 
 - Gunakan method bawaan Java `Math.abs(a - b)` untuk menghitung selisih mutlak antara dua bilangan.
-- Buat satu method `hitungSelisihMutlak(int nilai, int kkm)` yang mengembalikan `int` (hasil dari `Math.abs(nilai - kkm)`).
+- Buat method `hitungSelisihMutlak(int nilai, int kkm)` yang mengembalikan `int` (hasil dari `Math.abs(nilai - kkm)`).
+- Buat method `hitungJumlahLulusKKM(int[] nilai, int kkm)` yang mengembalikan `int` (banyaknya nilai yang ≥ kkm). Kedua method ini wajib dibuat terpisah.
 - Gunakan perulangan `for` untuk membandingkan selisih setiap nilai, simpan nilai dengan selisih terkecil yang ditemukan sejauh ini.
 
 ## Poin Tambahan (opsional, jika waktu masih cukup)
 
-Tampilkan juga selisihnya (baris kedua), dan hitung berapa banyak siswa yang nilainya sudah mencapai atau melebihi KKM.
+Tampilkan juga nilai tertinggi dan terendah dari keseluruhan data.

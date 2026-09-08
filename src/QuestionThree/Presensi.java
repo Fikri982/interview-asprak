@@ -12,10 +12,17 @@ public class Presensi {
         return total;
     }
 
+    static double hitungPersentase(int totalHadir, int totalHari) {
+        return (totalHadir / (double) totalHari) * 100;
+    }
+
     public static void main(String[] args) {
         boolean[] presensi = {true, true, false, true, true};
 
         int totalHadir = hitungTotalHadir(presensi);
+        double persentase = hitungPersentase(totalHadir, presensi.length);
+
         System.out.println("Total hari hadir: " + totalHadir);
+        System.out.println("Memenuhi syarat 75%: " + (persentase >= 75.0));
     }
 }

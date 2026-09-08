@@ -14,23 +14,33 @@ public class PrimaBonus {
         return true;
     }
 
+    static String tentukanGanjilGenap(int angka) {
+        if (angka % 2 == 0) {
+            return "Genap";
+        } else {
+            return "Ganjil";
+        }
+    }
+
     public static void main(String[] args) {
         int n = 20;
 
-        boolean pertama = true;
-        int totalPrima = 0;
+        int totalGanjil = 0;
+        int totalGenap = 0;
+
         for (int i = 2; i <= n; i++) {
             if (isPrima(i)) {
-                if (!pertama) {
-                    System.out.print(" ");
+                String ganjilGenap = tentukanGanjilGenap(i);
+                System.out.println(i + " (" + ganjilGenap + ")");
+                if (ganjilGenap.equals("Genap")) {
+                    totalGenap++;
+                } else {
+                    totalGanjil++;
                 }
-                System.out.print(i);
-                pertama = false;
-                totalPrima++;
             }
         }
-        System.out.println();
 
-        System.out.println("Total bilangan prima: " + totalPrima);
+        System.out.println("Total prima ganjil: " + totalGanjil);
+        System.out.println("Total prima genap: " + totalGenap);
     }
 }

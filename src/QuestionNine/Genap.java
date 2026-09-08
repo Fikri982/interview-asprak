@@ -12,13 +12,26 @@ public class Genap {
         return jumlah;
     }
 
+    static String tentukanDominasi(int jumlahGenap, int jumlahGanjil) {
+        if (jumlahGenap > jumlahGanjil) {
+            return "Genap";
+        } else if (jumlahGanjil > jumlahGenap) {
+            return "Ganjil";
+        } else {
+            return "Seimbang";
+        }
+    }
+
     public static void main(String[] args) {
-        int[] data = {2, 4, 6, 8, 10, 12};
+        int[] data = {3, 4, 7, 8, 10, 11};
 
         int jumlahGenap = hitungGenap(data);
+        int jumlahGanjil = data.length - jumlahGenap;
         double proporsi = (jumlahGenap / (double) data.length) * 100;
+        String dominasi = tentukanDominasi(jumlahGenap, jumlahGanjil);
 
         System.out.println("Jumlah bilangan genap: " + jumlahGenap);
         System.out.println("Proporsi bilangan genap: " + proporsi + "%");
+        System.out.println("Data didominasi: " + dominasi);
     }
 }

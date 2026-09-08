@@ -7,7 +7,10 @@ Diberikan sebuah data kehadiran Mahasiswa Matematika ITS selama satu minggu perk
 - `true` berarti mahasiswa hadir pada hari tersebut (datang ke kampus),
 - `false` berarti mahasiswa tidak hadir (tidak datang ke kampus).
 
-Tentukan banyaknya suku (hari) yang bernilai "hadir" (total hari hadir).
+Dari data tersebut, tentukan dua hal berikut:
+
+1. Banyaknya hari yang bernilai "hadir" (total hari hadir).
+2. Apakah proporsi hari hadir terhadap total hari (5 hari) sudah memenuhi syarat minimal **75%**.
 
 ## Format Input
 
@@ -21,10 +24,11 @@ boolean[] presensi = {true, true, false, true, true};
 
 ## Format Output
 
-Program mencetak satu baris:
+Program mencetak dua baris:
 
 ```
 Total hari hadir: <jumlah>
+Memenuhi syarat 75%: <true/false>
 ```
 
 ## Contoh
@@ -39,6 +43,7 @@ boolean[] presensi = {true, true, false, true, true};
 
 ```
 Total hari hadir: 4
+Memenuhi syarat 75%: true
 ```
 
 **Input**
@@ -51,14 +56,15 @@ boolean[] presensi = {true, true, false, false, true};
 
 ```
 Total hari hadir: 3
+Memenuhi syarat 75%: false
 ```
 
 ## Petunjuk
 
-- Buat satu method `hitungTotalHadir(boolean[] presensi)` yang mengembalikan `int`.
-- Gunakan perulangan `for` untuk mengecek setiap elemen array, tambah counter setiap kali nilainya `true`.
+- Buat method `hitungTotalHadir(boolean[] presensi)` yang mengembalikan `int`.
+- Buat method `hitungPersentase(int totalHadir, int totalHari)` yang mengembalikan `double`. Kedua method ini wajib dibuat terpisah.
+- Proporsi kehadiran dihitung dengan: `(totalHadir / (double) totalHari) * 100`. Jangan lupa cast ke `double` agar hasil pembagian tidak dibulatkan ke bawah menjadi 0.
 
 ## Poin Tambahan (opsional, jika waktu masih cukup)
 
-1. Buat method `hitungPersentase(int totalHadir, int totalHari)` yang mengembalikan `double`, lalu tentukan apakah mahasiswa tersebut memenuhi syarat kehadiran minimal 75%. Ingat, gunakan cast `(double)` agar hasil pembagian tidak dibulatkan ke bawah menjadi 0.
-2. Cari **hari pertama** mahasiswa tersebut tidak hadir (tampilkan nama harinya). Jika tidak ada hari yang absen, tampilkan keterangan "Selalu hadir".
+Cari **hari pertama** mahasiswa tersebut tidak hadir (tampilkan nama harinya). Jika tidak ada hari yang absen, tampilkan keterangan "Selalu hadir".

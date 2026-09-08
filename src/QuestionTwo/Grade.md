@@ -2,7 +2,7 @@
 
 ## Deskripsi
 
-Kamu adalah seorang dosen Mata Kuliah Algoritma dan Pemrograman Komputer 1 dan ingin menentukan grade huruf pada 5 mahasiswa untuk Mata Kuliah tersebut. Contoh aturan untuk menentukan grade:
+Kamu adalah seorang dosen Mata Kuliah Algoritma dan Pemrograman Komputer 1 dan ingin menentukan grade huruf pada 5 mahasiswa untuk Mata Kuliah tersebut. Aturan penentuan grade adalah sebagai berikut:
 
 ```
 Grade(x) =
@@ -15,11 +15,11 @@ Grade(x) =
     E,   jika 0 <= x <= 40
 ```
 
-Buatlah program yang menghitung dan menampilkan grade dari nilai Algoritma dan Pemrograman Komputer 1 untuk 5 mahasiswa.
+Buatlah program yang menghitung dan menampilkan grade dari nilai Algoritma dan Pemrograman Komputer 1 untuk 5 mahasiswa, sekaligus menghitung berapa banyak mahasiswa yang dinyatakan **lulus** (grade selain "D" dan "E").
 
 ## Format Input
 
-- Sebuah array bilangan bulat (`int[]`) berisi nilai 5 mahasiswa, masing-masing bernilai 0–100 (Asumsi nilai mahasiswa tersebut bilangan bulat).
+- Sebuah array bilangan bulat (`int[]`) berisi nilai 5 mahasiswa, masing-masing bernilai 0–100 (asumsi nilai mahasiswa tersebut bilangan bulat).
 
 Contoh deklarasi di dalam kode:
 
@@ -29,10 +29,19 @@ int[] nilai = {90, 60, 40, 75, 88};
 
 ## Format Output
 
-Grade untuk setiap nilai dicetak berurutan sesuai urutan input dengan format per baris:
+- Grade untuk setiap nilai, dicetak berurutan sesuai urutan input.
+- Satu baris terakhir berisi jumlah total mahasiswa yang lulus.
+
+Format cetak per baris:
 
 ```
 Nilai <nilai> -> Grade <grade>
+```
+
+Diakhiri dengan:
+
+```
+Total lulus: <jumlah>
 ```
 
 ## Contoh
@@ -51,14 +60,16 @@ Nilai 60 -> Grade C
 Nilai 40 -> Grade E
 Nilai 75 -> Grade B
 Nilai 88 -> Grade A
+Total lulus: 4
 ```
 
 ## Petunjuk
 
 - Buat method `tentukanGrade(int nilai)` yang menerima satu nilai dan mengembalikan `String` (grade-nya).
+- Buat method `isLulus(String grade)` yang menerima grade dan mengembalikan `boolean` (true jika grade selain "D" dan "E"). Kedua method ini wajib dibuat terpisah.
 - Gunakan struktur `if - else if - else` yang berurutan dari kondisi tertinggi ke terendah agar aturan grade tidak tertukar.
+- Ingat bahwa grade bertipe `String`, jadi gunakan `.equals()` untuk membandingkannya dengan `"D"` dan `"E"`, bukan operator `==`.
 
 ## Poin Tambahan (opsional, jika waktu masih cukup)
 
-1. Tambahkan hitungan jumlah mahasiswa yang **lulus** (grade selain "D" dan "E"), tampilkan sebagai baris terakhir: `Total lulus: <jumlah>`.
-2. Pisahkan logika cek kelulusan ke dalam method `isLulus(String grade)` yang mengembalikan `boolean`. Ingat bahwa grade bertipe String maka bisa gunakan .equals() untuk membandingkannya dengan "D" dan "E".
+Tampilkan juga nilai rata-rata dari seluruh mahasiswa yang lulus saja (grade selain D dan E).

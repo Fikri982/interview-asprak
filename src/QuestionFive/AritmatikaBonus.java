@@ -20,6 +20,10 @@ public class AritmatikaBonus {
         if (hasil) {
             int beda = data[1] - data[0];
             System.out.println("Beda: " + beda);
+
+            int a = data[0];
+            int sukuKe10 = a + (10 - 1) * beda;
+            System.out.println("Suku ke-10: " + sukuKe10);
         }
     }
 }
