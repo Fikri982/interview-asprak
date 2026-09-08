@@ -43,11 +43,14 @@ src/
 │   ├── Genap.md
 │   ├── Genap.java
 │   └── GenapBonus.java
-├── QuestionFreestyle/
-│   ├── Submatriks.md
-│   ├── Submatriks.java
-│   └── SubmatriksBonus.java
-└── ...                          # QuestionTen, dst. mengikuti pola yang sama
+├── QuestionTen/
+│   ├── FPBKPK.md
+│   ├── FPBKPK.java
+│   └── FPBKPKBonus.java
+└── QuestionFreestyle/
+    ├── Submatriks.md
+    ├── Submatriks.java
+    └── SubmatriksBonus.java
 ```
 
 Setiap folder `Question<N>` mengikuti pola: nama package `Question<N>` (huruf pertama kapital, tanpa spasi, angka dieja dalam bahasa Inggris), satu file `.md` berisi soal, satu file `.java` berisi solusi dasar (sesuai spesifikasi utama saja), dan satu file `<NamaSoal>Bonus.java` berisi solusi yang sama ditambah poin tambahan (opsional) dari soal tersebut.
@@ -65,9 +68,10 @@ Setiap folder `Question<N>` mengikuti pola: nama package `Question<N>` (huruf pe
 | 7 | [Absolute.md](src/QuestionSeven/Absolute.md) | Cari nilai ujian paling dekat dengan KKM (selisih mutlak) | [Absolute.java](src/QuestionSeven/Absolute.java) | [AbsoluteBonus.java](src/QuestionSeven/AbsoluteBonus.java) |
 | 8 | [Prima.md](src/QuestionEight/Prima.md) | Cari semua bilangan prima dari 2 sampai n | [Prima.java](src/QuestionEight/Prima.java) | [PrimaBonus.java](src/QuestionEight/PrimaBonus.java) |
 | 9 | [Genap.md](src/QuestionNine/Genap.md) | Hitung jumlah dan proporsi bilangan genap dalam data | [Genap.java](src/QuestionNine/Genap.java) | [GenapBonus.java](src/QuestionNine/GenapBonus.java) |
+| 10 | [FPBKPK.md](src/QuestionTen/FPBKPK.md) | Hitung FPB dan KPK dari dua bilangan | [FPBKPK.java](src/QuestionTen/FPBKPK.java) | [FPBKPKBonus.java](src/QuestionTen/FPBKPKBonus.java) |
 | Freestyle | [Submatriks.md](src/QuestionFreestyle/Submatriks.md) | Cari submatriks 2D dengan jumlah elemen terbesar (Kadane 2D) | [Submatriks.java](src/QuestionFreestyle/Submatriks.java) | [SubmatriksBonus.java](src/QuestionFreestyle/SubmatriksBonus.java) |
 
-> Tabel ini akan bertambah baris setiap kali ada soal baru ditambahkan (`QuestionTen`, dst).
+> Total 10 soal wajib (Soal 1-10) + 1 soal freestyle (stretch/opsional).
 
 ## Cara Menjalankan
 
