@@ -69,9 +69,9 @@ matriks = {
 
 ## Hint
 
-- **Cara paling gampang kepikiran (tapi SANGAT lambat):** coba semua kemungkinan kombinasi baris atas-bawah dan kolom kiri-kanan (4 nested loop), lalu untuk tiap kombinasi hitung jumlah seluruh elemen di dalamnya. Ini **jalan** dan **hasilnya benar**, tapi buat matriks yang besar, ini bakal sangat lambat.
+- **Cara paling gampang kepikiran (tapi SANGAT lambat):** coba semua kemungkinan kombinasi baris atas-bawah dan kolom kiri-kanan (4 nested loop), lalu untuk tiap kombinasi hitung jumlah seluruh elemen di dalamnya. Ini **jalan** dan **hasilnya benar**, tapi buat matriks yang besar ini bakal sangat lambat.
 
-- **Kalau mau cara yang lebih cepat**, coba pikirkan: bagaimana kalau kamu sudah menetapkan batas kolom kiri dan kanan yang mau dipakai (`c1` dan `c2` sudah fix)? Dari situ, masalahnya jadi lebih sederhana — tinggal cari kombinasi baris mana yang menghasilkan jumlah terbesar. Ini mirip dengan masalah klasik "mencari bagian berurutan dari sebuah barisan angka yang jumlahnya paling besar" (kalau familiar, ini dikenal sebagai **algoritma Kadane**), tapi diterapkan pada satu dimensi setelah dimensi lainnya "dipadatkan" jadi satu angka.
+- **Kalau mau cara yang lebih cepat**, coba pikirkan: bagaimana kalau kamu sudah menetapkan batas kolom kiri dan kanan yang mau dipakai (`c1` dan `c2` sudah fix)? Dari situ, masalahnya jadi lebih sederhana tinggal cari kombinasi baris mana yang menghasilkan jumlah terbesar. Ini mirip dengan masalah klasik "mencari bagian berurutan dari sebuah barisan angka yang jumlahnya paling besar", tapi diterapkan pada satu dimensi setelah dimensi lainnya "dipadatkan" jadi satu angka.
 
 - Buat minimal 2 method:
   1. Satu method untuk menyelesaikan bagian "cari jumlah terbesar dari suatu barisan berurutan" di atas.
