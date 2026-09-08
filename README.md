@@ -35,11 +35,19 @@ src/
 │   ├── Absolute.md
 │   ├── Absolute.java
 │   └── AbsoluteBonus.java
+├── QuestionEight/
+│   ├── Prima.md
+│   ├── Prima.java
+│   └── PrimaBonus.java
+├── QuestionNine/
+│   ├── Genap.md
+│   ├── Genap.java
+│   └── GenapBonus.java
 ├── QuestionFreestyle/
 │   ├── Submatriks.md
 │   ├── Submatriks.java
 │   └── SubmatriksBonus.java
-└── ...                          # QuestionEight, dst. mengikuti pola yang sama
+└── ...                          # QuestionTen, dst. mengikuti pola yang sama
 ```
 
 Setiap folder `Question<N>` mengikuti pola: nama package `Question<N>` (huruf pertama kapital, tanpa spasi, angka dieja dalam bahasa Inggris), satu file `.md` berisi soal, satu file `.java` berisi solusi dasar (sesuai spesifikasi utama saja), dan satu file `<NamaSoal>Bonus.java` berisi solusi yang sama ditambah poin tambahan (opsional) dari soal tersebut.
@@ -55,9 +63,11 @@ Setiap folder `Question<N>` mengikuti pola: nama package `Question<N>` (huruf pe
 | 5 | [Aritmatika.md](src/QuestionFive/Aritmatika.md) | Cek apakah sebuah barisan bilangan merupakan barisan aritmatika | [Aritmatika.java](src/QuestionFive/Aritmatika.java) | [AritmatikaBonus.java](src/QuestionFive/AritmatikaBonus.java) |
 | 6 | [ConvertTemp.md](src/QuestionSix/ConvertTemp.md) | Konversi suhu Celsius ke Fahrenheit | [ConvertTemp.java](src/QuestionSix/ConvertTemp.java) | [ConvertTempBonus.java](src/QuestionSix/ConvertTempBonus.java) |
 | 7 | [Absolute.md](src/QuestionSeven/Absolute.md) | Cari nilai ujian paling dekat dengan KKM (selisih mutlak) | [Absolute.java](src/QuestionSeven/Absolute.java) | [AbsoluteBonus.java](src/QuestionSeven/AbsoluteBonus.java) |
+| 8 | [Prima.md](src/QuestionEight/Prima.md) | Cari semua bilangan prima dari 2 sampai n | [Prima.java](src/QuestionEight/Prima.java) | [PrimaBonus.java](src/QuestionEight/PrimaBonus.java) |
+| 9 | [Genap.md](src/QuestionNine/Genap.md) | Hitung jumlah dan proporsi bilangan genap dalam data | [Genap.java](src/QuestionNine/Genap.java) | [GenapBonus.java](src/QuestionNine/GenapBonus.java) |
 | Freestyle | [Submatriks.md](src/QuestionFreestyle/Submatriks.md) | Cari submatriks 2D dengan jumlah elemen terbesar (Kadane 2D) | [Submatriks.java](src/QuestionFreestyle/Submatriks.java) | [SubmatriksBonus.java](src/QuestionFreestyle/SubmatriksBonus.java) |
 
-> Tabel ini akan bertambah baris setiap kali ada soal baru ditambahkan (`QuestionEight`, dst).
+> Tabel ini akan bertambah baris setiap kali ada soal baru ditambahkan (`QuestionTen`, dst).
 
 ## Cara Menjalankan
 
